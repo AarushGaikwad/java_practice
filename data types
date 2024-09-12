@@ -1,0 +1,29 @@
+package dataTypes;
+
+public class DataTypeExample {
+
+	public static void main(String[] args) {
+		
+		byte byteVar = 0;
+        short shortVar = 0;
+        int a = 1;
+        long b = 10000;
+        float f = 10.12f;
+        double d = 0.0d;
+        char c = 'u';
+        char charVar = '7';
+        boolean bool = true;
+
+        System.out.println("Byte: " + byteVar);
+        System.out.println("Short: " + shortVar);
+        System.out.println("Int is: " + a);
+        System.out.println("Long: " + b);
+        System.out.println("Float is: " + f);
+        System.out.println("Double: " + d);
+        System.out.println("char: " + c);
+        System.out.println("Character: " + charVar);
+        System.out.println("boolean is: " + bool);
+
+	}
+
+}

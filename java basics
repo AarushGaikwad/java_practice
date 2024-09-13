@@ -1,0 +1,34 @@
+/**
+ * @author Aarush
+ * 
+ * java doc comment
+ */
+
+package Structures;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		System.out.println("this is the main method");
+		System.out.println(args[0]);
+	}
+
+}
+
+
+package Structures;
+
+public class Animal {
+	String name;
+	String species;
+	
+	public void sound() {
+		System.out.println("thsi is dog and it barks");
+	}
+	
+	public String getName() {
+		return name;
+	}
+}
+
+

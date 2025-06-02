@@ -1,0 +1,9 @@
+class MyClass {
+    static int staticVariable = 42; // Static variable
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(MyClass.staticVariable); // Access using class name
+    }
+}

@@ -1,0 +1,37 @@
+abstract class Animal{
+    abstract void sound();
+    
+    void classes(){
+        System.out.println("This are animal");
+    }
+}
+
+class Dog extends Animal{
+    void sound(){
+        System.out.println("Dog barks");
+    }
+}
+
+class Cow extends Animal{
+    void sound(){
+        System.out.println("Cow moos");
+    }
+}
+
+class Rotwiller extends Dog{
+    void behavior(){
+    System.out.println("Dog can bite you");
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        Dog d = new Dog();
+        d.classes();
+        d.sound();
+        Rotwiller rot = new Rotwiller();
+        rot.behavior();
+        Cow cow = new Cow();
+        cow.sound();
+    } 
+}

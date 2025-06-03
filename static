@@ -1,0 +1,17 @@
+class A{
+    public static int x;
+    
+    void show(){
+        x=10;
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("value of x=" + A.x);
+        A a = new A();
+        a.show();
+        System.out.println("value of x=" +  A.x);
+        
+    } 
+}

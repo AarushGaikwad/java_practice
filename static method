@@ -1,0 +1,16 @@
+class Vehicle{
+    static void car(){
+        String name = "audi";
+        int unit = 5;
+        
+        System.out.println("Car is " + name);
+        System.out.println("Unit to be produce " + unit);
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args){
+        Vehicle.car();
+    } 
+}

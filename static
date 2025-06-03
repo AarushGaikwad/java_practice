@@ -15,3 +15,23 @@ public class Main {
         
     } 
 }
+
+
+//A program where static entities are overrided
+class Config{
+    static String str = "arnav";
+    static int id = 2;
+    
+    Config(){
+        str = "Aarush";  //override the value of static string and id
+        id = 1;
+    }
+}
+
+public class Main {
+    public static void main(String[] args){
+        Config config = new Config();
+        System.out.println(Config.str);
+        System.out.println(Config.id);
+    } 
+}

@@ -10,6 +10,10 @@ public class Main {
         set.add("banglore");
         
         System.out.println("set contains: " + set);
+
+        set.clear();  //clear method to clear the set
+        
+        System.out.println("set is empty " + set);
     }
 }
 

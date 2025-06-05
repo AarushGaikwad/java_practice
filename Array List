@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> car = new ArrayList<>();
+        car.add("BMW");
+        car.add("Audi");
+        car.add("Supra");
+        car.add("Lamborghini");
+        
+        System.out.println("original list: " + car);
+        
+        Collections.sort(car);
+        System.out.println("sorted list is: " + car);
+        
+        
+    }
+}

@@ -12,3 +12,9 @@ public class Main {
         System.out.println("set contains: " + set);
     }
 }
+
+Use HashSet for fast lookups with no order guarantee.
+
+Use LinkedHashSet to maintain insertion order.
+
+Use TreeSet for sorted order.

@@ -37,3 +37,31 @@ public class Main {
     }
 }
 // searching the city
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> cities = new ArrayList<>();
+        cities.add("Tokyo");
+        cities.add("Berlin");
+        cities.add("Melbourn");
+        cities.add("Los Angeles");
+        cities.add("Delhi");
+        
+        System.out.println("original list: " + cities);
+        
+        cities.remove(3);
+        
+        System.out.println("list of cities are: " + cities);
+        
+        String search = "Delhi";
+        if(cities.contains(search)) {
+            System.out.println("city " + search + " is found");
+        }
+        else {
+            System.out.println("city not found");
+        }
+    }
+}

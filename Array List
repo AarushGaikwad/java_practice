@@ -16,3 +16,24 @@ public class Main {
         
     }
 }
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> cities = new ArrayList<>();
+        cities.add("Tokyo");
+        cities.add("Berlin");
+        cities.add("Melbourn");
+        cities.add("Los Angeles");
+        cities.add("Delhi");
+        
+        System.out.println("original list: " + cities);
+        
+        String search = "Delhi";
+        if(cities.contains(search)) {
+            System.out.println("city " + search + " is found");
+        }
+    }
+}
+// searching the city

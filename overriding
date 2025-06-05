@@ -5,12 +5,14 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
+    @Override
     public void describe(){
         System.out.println("this is a car class");
     }
 }
 
 class Supra extends Car {
+    @Override
     public void describe(){
         System.out.println("this is a supra car");
     }

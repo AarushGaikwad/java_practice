@@ -1,0 +1,27 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    public static void main(String[] args) {
+       
+        Queue<Integer> queue = new LinkedList<>();
+        
+       
+        queue.add(1);
+        queue.add(2);
+
+       
+        try {
+            queue.add(3); 
+            System.out.println("Element added using add()");
+        } catch (IllegalStateException e) {
+            System.out.println("Queue is full: " + e.getMessage());
+        }
+
+       
+        boolean isOffered = queue.offer(3);
+        System.out.println("Element added using offer(): " + isOffered);
+    }
+}
+
+//Used .add() and .offer() mehtod to get the diiference between them 

@@ -1,0 +1,17 @@
+class Concatenator {
+    public String concat(String a, String b) {
+        return a + b;
+    }
+
+    public String concat(String a, String b, String c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Concatenator c = new Concatenator();
+        System.out.println(c.concat("Hy ", "There"));       
+        System.out.println(c.concat("Java ", "is ", "fun and confusing"));    
+    }
+}

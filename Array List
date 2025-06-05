@@ -10,7 +10,7 @@ public class Main {
         
         System.out.println("original list: " + car);
         
-        Collections.sort(car);
+        Collections.sort(car);  //used a sort method to sort the list
         System.out.println("sorted list is: " + car);
         
         

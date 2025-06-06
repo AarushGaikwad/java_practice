@@ -14,3 +14,23 @@ class Main {
         thread2.start();
     }
 }
+
+
+//creating a simple task using single-thread executor
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Single-Thread Executor
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+
+        // Submit tasks
+        executor.submit(() -> System.out.println("Task 1 executed by: " + Thread.currentThread().getName()));
+        executor.submit(() -> System.out.println("Task 2 executed by: " + Thread.currentThread().getName()));
+        executor.submit(() -> System.out.println("Task 3 executed by: " + Thread.currentThread().getName()));
+
+        // Shutdown the executor
+        executor.shutdown();
+    }
+}

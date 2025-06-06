@@ -15,3 +15,20 @@ class Main {
         System.out.println(date);
     }
 }
+
+//practice of duration
+import java.time.*;
+
+class Main {
+    public static void main(String[] args) {
+        LocalTime startTime = LocalTime.of(6, 30); 
+        LocalTime endTime = LocalTime.of(10, 45); 
+
+        // Calculate the duration between two times
+        Duration duration = Duration.between(startTime, endTime);
+
+        System.out.println("Duration in hours: " + duration.toHours());
+        System.out.println("Duration in minutes: " + duration.toMinutes());
+        System.out.println("Duration in seconds: " + duration.toSeconds());
+    }
+}

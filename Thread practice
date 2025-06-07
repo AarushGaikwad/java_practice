@@ -29,3 +29,24 @@ public class Main {
         thread2.start();
     }
 }
+
+
+//printing the number with the timestamp of 1 sec 
+public class Main {
+    public static void main(String[] args) {
+        Thread thread = new Thread();
+        
+        for(int i =1; i<=10; i++){
+            System.out.println("Number: " + i);
+            
+            try{
+                Thread.sleep(1000);
+            }
+            catch(Exception e){
+                Thread.currentThread().interrupt();
+            }
+        }
+        
+        thread.start();
+    }
+}

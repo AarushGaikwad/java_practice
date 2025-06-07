@@ -1,0 +1,19 @@
+class OuterClass {
+    void display() {
+        class LocalInnerClass {
+            void print() {
+                System.out.println("this is a local inner class");
+            }
+        }
+        
+        LocalInnerClass local = new LocalInnerClass();
+        local.print();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        OuterClass out = new OuterClass();
+        out.display();
+    }
+}

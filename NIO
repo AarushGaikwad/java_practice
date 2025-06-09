@@ -10,5 +10,17 @@ class Main {
         
         //get the absolute path
         System.out.println("absolute path: " + path.toAbsolutePath());
+
+         //converting path as a String
+        System.out.println("path as a string: " + path.toString());
+        
+        // get count of the elements
+        System.out.println("Name count: " + path.getNameCount());
+        
+        //prints the element contains in the path
+        System.out.println("Elements in path");
+        for(int i=0; i < path.getNameCount(); i++){
+            System.out.println(" _ " + path.getName(i));
+        }
     }
 }

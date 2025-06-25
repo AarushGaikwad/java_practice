@@ -1,23 +1,24 @@
 import java.util.*;
 
-class Main {
+class MergeSortedArrays {
     public static void main(String[] args) {
-        int[] num1 = {4,5,2,3};
-        int[] num2 = {1,9,8,7};
-        int[] merged = new int[num1.length + num2.length];
+        int[] arr1 = {1, 3, 5};
+        int[] arr2 = {2, 4, 6};
+        int[] merged = new int[arr1.length + arr2.length];
         
-        for(int i = 0; i < num1.length; i++){
-            merged[i] = num1[i];
+        int i = 0, j = 0, k = 0;
+        while (i < arr1.length && j < arr2.length) {
+            if (arr1[i] < arr2[j]) {
+                merged[k++] = arr1[i++];
+            } else {
+                merged[k++] = arr2[j++];
+            }
         }
+        while (i < arr1.length) merged[k++] = arr1[i++];
+        while (j < arr2.length) merged[k++] = arr2[j++];
         
-        for(int i = 0; i< num2.length; i++){
-            merged[num1.length + i] = num2[i];
-        }
-        
-        Arrays.sort(merged);
-        
-        System.out.println("merged array is: " + Arrays.toString(merged));
-        
-        
+        System.out.println("Merged Array: " + Arrays.toString(merged));
     }
 }
+// This code merges two sorted arrays into one sorted array
+// and prints the result. It uses a two-pointer technique to efficiently merge the arrays.

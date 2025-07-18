@@ -1,0 +1,52 @@
+class Person{
+    private String name;
+    private int age;
+    
+    Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void displayDetails(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+class Employee extends Person{
+    private String designation;
+    
+    Employee(String name, int age, String designation){
+        super(name, age);
+        this.designation = designation;
+    }
+    
+    @Override 
+    public void displayDetails(){
+        super.displayDetails();
+        System.out.println("Designation:" + designation);
+    }
+}
+
+class Manager extends Employee{
+    private int teamSize;
+    
+    Manager(String name, int age, String designation, int teamSize){
+        super(name, age, designation);
+        this.teamSize = teamSize;
+    }
+    
+    @Override 
+    public void displayDetails(){
+        super.displayDetails();
+        System.out.println("Team size is: " + teamSize);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       Manager manager = new Manager("bob", 32, "team lead", 20);
+       manager.displayDetails();
+       
+    }
+}

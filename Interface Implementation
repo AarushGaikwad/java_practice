@@ -1,0 +1,55 @@
+interface MediaPlayer{
+    void play();
+    void pause();
+    void stop();
+}
+
+class AudioPlayer implements MediaPlayer{
+    AudioPlayer(){
+        System.out.println("song is playing");
+    }
+    @Override 
+    public void play(){
+        System.out.println("audio is playing");
+    }
+    @Override 
+    public void pause(){
+        System.out.println("audio is paused");
+    }
+    @Override
+    public void stop(){
+        System.out.println("audio is stopped");
+    }
+}
+
+class VideoPlayer implements MediaPlayer{
+   
+    @Override
+    public void play(){
+        System.out.println("4D animation video is playing");
+        System.out.println("video is playing");
+    }
+    @Override
+    public void pause(){
+        System.out.println("video is paused");
+    }
+    @Override 
+    public void stop(){
+        System.out.println("video is stopped");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        MediaPlayer audio = new AudioPlayer();
+        MediaPlayer video = new VideoPlayer();
+        
+        audio.play();
+        audio.pause();
+        audio.stop();
+        
+        video.play();
+        video.pause();
+        video.stop();
+    }
+}

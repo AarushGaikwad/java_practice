@@ -1,0 +1,35 @@
+class Vehicle {
+    public void describe(){
+        System.out.println("this is a vehicle class");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    public void describe(){
+        System.out.println("this is a car class");
+    }
+}
+
+class Supra extends Car {
+    @Override
+    public void describe(){
+        System.out.println("this is a supra car");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+        Vehicle s = new Supra();
+        Vehicle car = new Car();
+        s.describe();
+        car.describe();
+        // Car c = new Car();
+        // Supra s = new Supra();
+        
+        // v.describe();
+        // c.describe();
+        // s.describe();
+    }
+}

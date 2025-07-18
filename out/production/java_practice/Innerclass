@@ -1,0 +1,18 @@
+class OuterClass {
+    private String message = "Hello from outer class";
+    
+    class InnerClass {
+        public void display() {
+            System.out.println(message);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        OuterClass out = new OuterClass();
+        OuterClass.InnerClass in = out.new InnerClass();
+        
+        in.display();
+    }
+}

@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<String> set = new HashSet<>();
+        
+        set.add("delhi");
+        set.add("mumbai");
+        set.add("pune");
+        set.add("banglore");
+        
+        System.out.println("set contains: " + set);
+
+        set.clear();  //clear method to clear the set
+        
+        System.out.println("set is empty " + set);
+    }
+}
+
+Use HashSet for fast lookups with no order guarantee.
+
+Use LinkedHashSet to maintain insertion order.
+
+Use TreeSet for sorted order.

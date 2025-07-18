@@ -1,0 +1,21 @@
+import java.nio.file.*;
+class Main {
+    public static void main(String[] args) {
+        
+        // get the default file system
+        FileSystem fileSystem = FileSystems.getDefault();
+        System.out.println("default file system: " + fileSystem);
+        
+        //display file system properties
+        System.out.println("file seperator: " + fileSystem.getSeparator());
+        
+        System.out.println("Is read only: " + fileSystem.isReadOnly());
+        
+        //list root directories
+        System.out.println("Root directories");
+        fileSystem.getRootDirectories().forEach(System.out::println);
+        
+        //list supported file attribute views
+        System.out.println("Supported file attribute views: " + fileSystem.supportedFileAttributeViews());
+    }
+}

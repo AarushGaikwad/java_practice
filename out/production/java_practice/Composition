@@ -1,0 +1,49 @@
+class Engine{
+    private String type;
+    
+    public Engine(String type){
+        this.type = type;
+    }
+    
+    public String getType(){
+        return type;
+    }
+    
+    public void start(){
+        System.out.println(type + " engine is starting");
+    }
+    
+    public void stop(){
+        System.out.println(type + " engine is stopping");
+    }
+}
+
+class Car{
+    private String brand;
+    private Engine engine; 
+    
+    public Car(String brand, Engine engine){
+        this.brand = brand;
+        this.engine = engine;
+    }
+    
+    public void startCar(){
+        System.out.println(brand + " car is starting");
+        engine.start();
+    }
+    
+    public void stopCar(){
+        System.out.println(brand + " car is stopping");
+        engine.stop();
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Engine engine = new Engine("V8");
+        Car car = new Car("Covette", engine);
+        
+        car.startCar();
+        car.stopCar();
+    }
+}

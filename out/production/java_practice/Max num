@@ -1,0 +1,22 @@
+class MaxNumber {
+    public int max(int a, int b){
+        return Math.max(a,b);
+    }
+    
+    public double max(double a, double b){
+        return Math.max(a,b);
+    }
+    
+    public int max(int a, int b, int c){
+        return Math.max(a, Math.max(b,c));
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MaxNumber num = new MaxNumber();
+        System.out.println(num.max(10,15));
+        System.out.println(num.max(0.5,0.12));
+        System.out.println(num.max(4,7,9));
+    }
+}

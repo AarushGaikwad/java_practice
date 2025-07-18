@@ -1,0 +1,26 @@
+import java.nio.file.*;
+class Main {
+    public static void main(String[] args) {
+        Path path = Paths.get("E:/cafe managament/com.inn.cafe/src/main/java/com/inn/cafe/rest/UseRest");
+        //get file name
+        System.out.println("file name: " + path.getFileName());
+        
+        //get the parent path
+        System.out.println("parent path: " + path.getParent());
+        
+        //get the absolute path
+        System.out.println("absolute path: " + path.toAbsolutePath());
+
+         //converting path as a String
+        System.out.println("path as a string: " + path.toString());
+        
+        // get count of the elements
+        System.out.println("Name count: " + path.getNameCount());
+        
+        //prints the element contains in the path
+        System.out.println("Elements in path");
+        for(int i=0; i < path.getNameCount(); i++){
+            System.out.println(" _ " + path.getName(i));
+        }
+    }
+}

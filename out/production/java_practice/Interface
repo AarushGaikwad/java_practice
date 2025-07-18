@@ -1,0 +1,25 @@
+interface Drivable {
+    void drive(); // Abstract method
+}
+
+interface Flyable {
+    void fly(); // Abstract method
+}
+
+class FlyingCar implements Drivable, Flyable {
+    public void drive() {
+        System.out.println("Driving on the road.");
+    }
+
+    public void fly() {
+        System.out.println("Flying in the sky.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        FlyingCar vehicle = new FlyingCar();
+        vehicle.drive();
+        vehicle.fly();
+    }
+}

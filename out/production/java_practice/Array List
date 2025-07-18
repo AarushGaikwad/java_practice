@@ -1,0 +1,67 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> car = new ArrayList<>();
+        car.add("BMW");
+        car.add("Audi");
+        car.add("Supra");
+        car.add("Lamborghini");
+        
+        System.out.println("original list: " + car);
+        
+        Collections.sort(car);  //used a sort method to sort the list
+        System.out.println("sorted list is: " + car);
+        
+        
+    }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> cities = new ArrayList<>();
+        cities.add("Tokyo");
+        cities.add("Berlin");
+        cities.add("Melbourn");
+        cities.add("Los Angeles");
+        cities.add("Delhi");
+        
+        System.out.println("original list: " + cities);
+        
+        String search = "Delhi";
+        if(cities.contains(search)) {
+            System.out.println("city " + search + " is found");
+        }
+    }
+}
+// searching the city
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> cities = new ArrayList<>();
+        cities.add("Tokyo");
+        cities.add("Berlin");
+        cities.add("Melbourn");
+        cities.add("Los Angeles");
+        cities.add("Delhi");
+        
+        System.out.println("original list: " + cities);
+        
+        cities.remove(3);
+        
+        System.out.println("list of cities are: " + cities);
+        
+        String search = "Delhi";
+        if(cities.contains(search)) {
+            System.out.println("city " + search + " is found");
+        }
+        else {
+            System.out.println("city not found");
+        }
+    }
+}

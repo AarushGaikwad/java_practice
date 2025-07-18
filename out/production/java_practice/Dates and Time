@@ -1,0 +1,34 @@
+import java.time.*;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("practice of date and time");
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+        System.out.println(LocalDateTime.now());
+        System.out.println(ZonedDateTime.now());
+
+        ZonedDateTime indiaTime = ZonedDateTime.now(ZoneId.of("Asia/Kolkata"));
+        System.out.println("Date and Time in IST: " + indiaTime);
+        
+        LocalDate date = LocalDate.of(2024, Month.JANUARY, 1);
+        System.out.println(date);
+    }
+}
+
+//practice of duration
+import java.time.*;
+
+class Main {
+    public static void main(String[] args) {
+        LocalTime startTime = LocalTime.of(6, 30); 
+        LocalTime endTime = LocalTime.of(10, 45); 
+
+        // Calculate the duration between two times
+        Duration duration = Duration.between(startTime, endTime);
+
+        System.out.println("Duration in hours: " + duration.toHours());
+        System.out.println("Duration in minutes: " + duration.toMinutes());
+        System.out.println("Duration in seconds: " + duration.toSeconds());
+    }
+}

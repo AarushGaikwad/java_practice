@@ -1,0 +1,49 @@
+package Javavariables;
+
+public class Variables {
+	public static void main(String args[]) {
+		
+		String zooName;
+		int animals;
+		
+		int x=10;
+		
+		String s1, s2; 
+		String s3="yes" , s4="no";
+		
+		//total 4 string are declared and s1 and s2 are not initialized while s3 and s4 are initialized
+		
+		int identifier;
+		int $Identifier;
+		int _okindentifier;
+		
+		//both identifier are acceptable 
+		
+		
+		
+	
+	}
+	
+	//Local variable
+	public int Valid() {
+		int a = 3;
+		int b = 4;
+		int res = a+b;
+		return res;
+		
+		//local variable must be initialized before using it
+		
+		
+	
+		
+	}
+	
+	
+	public int notValid() {
+		int x = 2;
+		int y;
+		int result = x+y;  //it will give compilation error cause int y is not initialized
+		return result;
+	}
+	
+}

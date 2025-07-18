@@ -1,0 +1,24 @@
+class MyClass {
+    static int staticVariable = 42; // Static variable
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(MyClass.staticVariable); // Access using class name
+    }
+}
+
+
+//Static method
+class Abyss{
+    static void doom(){  //creating a static method
+        System.out.println("welcome in the abyss");
+    }
+}
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println("calling the static method");
+        Abyss.doom(); //calling a static method
+    }
+}
